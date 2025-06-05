@@ -1,0 +1,67 @@
+<footer class="bg-[#394823] text-[#f2f2f2] py-8 px-4 md:px-8">
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div>
+      <h3 class="font-bold text-lg mb-4">Contato</h3>
+      <div class="mb-4">
+        <div class="flex items-center mb-2">
+          <i class="fa-solid fa-location-dot mr-2"></i> <span>Endereço</span>
+        </div>
+        <p class="text-sm">{{ address }}</p>
+      </div>
+      <div class="mb-4">
+        <div class="flex items-center mb-2">
+          <i class="fa-solid fa-phone mr-2"></i> <span>Telefone</span>
+        </div>
+        <p class="text-sm">{{ phone }}</p>
+      </div>
+      <div>
+        <div class="flex items-center mb-2">
+          <i class="fa-solid fa-envelope mr-2"></i> <span>E-mail</span>
+        </div>
+        <p class="text-sm">{{ email }}</p>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="font-bold text-lg mb-4">Política</h3>
+      <ul>
+        <li class="mb-2">
+          <a href="#" class="hover:underline flex items-center">
+            <i class="fa-solid fa-cookie-bite mr-2"></i> Política de Cookies
+          </a>
+        </li>
+        <li>
+          <a href="#" class="hover:underline flex items-center">
+            <i class="fa-solid fa-shield-halved mr-2"></i> Política de Privacidade
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-bold text-lg mb-4">Nossas Redes</h3>
+      <ul>
+        <li class="mb-2">
+          <a href="#" target="_blank" class="hover:underline flex items-center">
+            <i class="fa-brands fa-instagram mr-2"></i> Instagram
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="hover:underline flex items-center">
+            <i class="fa-brands fa-facebook mr-2"></i> Facebook
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    
+    <div class="flex justify-start md:justify-end">
+      <img src="/assets/images/Icece-logo-branco.png" alt="Logotipo branco do ICECE." class="h-10">
+    </div>
+    
+  </div>
+
+  <div class="border-t border-gray-600 mt-8 pt-4 text-center text-sm">
+    <p>Copyright © {{ currentYear }} ICECE</p>
+  </div>
+</footer>

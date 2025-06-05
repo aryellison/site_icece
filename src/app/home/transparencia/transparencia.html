@@ -1,0 +1,63 @@
+<section
+  class="relative py-[96px] px-4 md:px-[64px] bg-white font-inter overflow-hidden pt-[128px]"
+>
+  <div class="container mx-auto max-w-[1280px]">
+    <div class="flex items-center justify-start mb-[40px] md:mb-[60px]">
+      <div
+        class="w-[184px] h-1 bg-lime-500 rounded-full flex-shrink-0 mr-[16px]"
+      ></div>
+      <h2
+        class="text-[48px] font-bold text-lime-900 flex-shrink-0 leading-[100%]"
+        style="width: 338px"
+      >
+        {{ sectionTitle }}
+      </h2>
+    </div>
+
+    <div class="absolute right-[-80px] top-[200px] z-0 opacity-70">
+      <div
+        class="w-[160px] h-[160px] rounded-full border border-lime-500 absolute"
+      ></div>
+      <div
+        class="w-[130px] h-[130px] rounded-full border border-lime-500 absolute top-[15px] left-[15px]"
+      ></div>
+    </div>
+
+    <p
+      class="leading-[100%] max-w-[928px] mx-auto text-left text-[18px] text-neutral-600 mb-[96px] h-auto"
+    >
+      {{ explanationText }}
+    </p>
+
+    <div
+      class="grid grid-cols-1 md:grid-cols-3 gap-[29px] justify-start mx-auto w-[961px]"
+    >
+      <a
+        *ngFor="let link of documentLinks"
+        [href]="link.url"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex flex-col items-start justify-start text-left p-[36px] bg-white rounded-[32px] transition-shadow duration-200"
+      >
+        <i
+          class="fa-regular fa-file-lines text-lime-500 text-[20px] mb-[8px]"
+          style="position: relative; top: 2px; left: 4px"
+        ></i>
+
+        <span
+          class="block font-bold text-neutral-500 text-[18px] leading-[100%] mb-[4px]"
+          style="width: 261px; height: 44px"
+        >
+          {{ link.text }}
+        </span>
+
+        <span
+          class="block font-medium text-[13px] leading-[100%] tracking-normal text-gray-400"
+          style="width: 261px; height: 16px"
+        >
+          CLIQUE PARA BAIXAR
+        </span>
+      </a>
+    </div>
+  </div>
+</section>

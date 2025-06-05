@@ -1,0 +1,47 @@
+<section class="py-16 px-4 md:px-8 bg-gray-50 font-inter">
+  <div class="container mx-auto max-w-[1280px]">
+    <div class="flex items-center justify-center mb-8">
+      <div
+        class="w-10 h-10 bg-lime-500 rounded-full flex items-center justify-center shadow mr-4"
+      >
+        <i class="fa-solid fa-star text-white text-lg"></i>
+      </div>
+      <h2
+        class="text-center text-[48px] md:text-[64px] font-bold text-lime-900"
+      >
+        {{ sectionTitle }}
+      </h2>
+    </div>
+
+    <p
+      class="text-center text-xl md:text-2xl italic text-lime-900 mb-16 max-w-4xl mx-auto"
+    >
+      "{{ quote }}"
+    </p>
+
+    <div
+      class="grid grid-cols-1 md:grid-cols-3 gap-x-[40px] gap-y-[5px] justify-center max-w-[970px] mx-auto"
+    >
+      <div
+        *ngFor="let service of services"
+        class="relative w-[320px] h-[600px] bg-cover bg-center rounded-[32px] overflow-hidden shadow-lg flex flex-col justify-end p-[36px] transform hover:scale-103 transition-transform duration-300 ease-in-out cursor-pointer"
+      >
+        <div
+          [style.background-image]="'url(' + service.image + ')'"
+          class="absolute inset-0 bg-cover bg-center"
+        ></div>
+
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+
+        <div
+          class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black to-transparent z-0"
+        ></div>
+
+        <div class="relative z-10 text-white">
+          <h3 class="text-2xl font-bold mb-2">{{ service.title }}</h3>
+          <p class="text-lg">{{ service.subtitle }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

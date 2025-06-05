@@ -1,0 +1,145 @@
+{
+  "images": [
+    {
+      "id": "banner-contato",
+      "src": "assets/images/banner-contato.jpg",
+      "alt": "Banner com imagem de pessoas em uma mesa, representando a seção de contato do ICECE.",
+      "title": "Entre em Contato Conosco"
+    },
+    {
+      "id": "banner-florescer-azul",
+      "src": "assets/images/banner-florescer-azul.jpg",
+      "alt": "Idosa e duas crianças em um campo escuro, observando borboletas azuis luminosas. Representa a iniciativa Florescer Azul do ICECE.",
+      "title": "Florescer Azul - Atendimento ao Espectro Autista"
+    },
+    {
+      "id": "banner-homepage",
+      "src": "assets/images/banner-homepage.jpg",
+      "alt": "Banner principal da página inicial do ICECE, com uma imagem inspiradora que representa a missão da instituição.",
+      "title": "ICECE - Conectando Conhecimento e Pessoas"
+    },
+    {
+      "id": "banner-trabalhe-conosco",
+      "src": "assets/images/banner-trabalhe-conosco.jpg",
+      "alt": "Banner com imagem de profissionais colaborando em um ambiente corporativo, representando a seção Trabalhe Conosco do ICECE.",
+      "title": "Faça Parte da Equipe ICECE"
+    },
+    {
+      "id": "evento",
+      "src": "assets/images/evento.jpg",
+      "alt": "Pessoas em uma palestra ou conferência, com foco em um participante atento, simbolizando um evento do ICECE.",
+      "title": "Destaque de Evento"
+    },
+    {
+      "id": "eventos",
+      "src": "assets/images/eventos.jpg",
+      "alt": "Grupo de pessoas interagindo e participando ativamente de um evento do ICECE.",
+      "title": "Nossos Eventos e Atividades"
+    },
+    {
+      "id": "exp-e-aprend",
+      "src": "assets/images/exp-e-aprend.jpg",
+      "alt": "Imagem que representa a fusão de experiência e aprendizado, talvez com elementos de estudo ou prática.",
+      "title": "Experiência e Aprendizagem Contínua"
+    },
+    {
+      "id": "familias",
+      "src": "assets/images/familias.jpg",
+      "alt": "Cena que representa famílias, união e apoio, ligada às iniciativas do ICECE.",
+      "title": "Famílias no ICECE"
+    },
+    {
+      "id": "florescer-azul-logo",
+      "src": "assets/images/florescer-azul-logo.png",
+      "alt": "Logotipo da iniciativa Florescer Azul, um projeto do ICECE.",
+      "title": "Logotipo Florescer Azul"
+    },
+    {
+      "id": "hands-fa",
+      "src": "assets/images/hands-fa.jpg",
+      "alt": "Mãos de pessoas em gesto de apoio ou trabalho colaborativo, representando a ação da instituição.",
+      "title": "Mãos à Obra - Colaboração ICECE"
+    },
+    {
+      "id": "ideas",
+      "src": "assets/images/ideas.jpg",
+      "alt": "Imagem que simboliza a geração de novas ideias e inovação, com elementos de criatividade.",
+      "title": "Nossas Ideias e Inovações"
+    },
+    {
+      "id": "interatividade",
+      "src": "assets/images/interatividade.jpg",
+      "alt": "Pessoas interagindo em um ambiente dinâmico, representando a interatividade nas ações do ICECE.",
+      "title": "Promovendo a Interatividade"
+    },
+    {
+      "id": "logo-icece",
+      "src": "assets/images/logo-icece.png",
+      "alt": "Logotipo principal do ICECE.",
+      "title": "Logotipo ICECE"
+    },
+    {
+      "id": "modelo-fundoverde-tc",
+      "src": "assets/images/modelo-fundoverde-tc.jpg",
+      "alt": "Modelo com fundo verde, utilizada em campanhas ou materiais do ICECE.",
+      "title": "Modelo de Design com Fundo Verde"
+    },
+    {
+      "id": "modelo-laranja-tc",
+      "src": "assets/images/modelo-laranja-tc.jpg",
+      "alt": "Modelo com fundo laranja, utilizada em campanhas ou materiais do ICECE.",
+      "title": "Modelo de Design com Fundo Laranja"
+    },
+    {
+      "id": "nossos-servicos-conc",
+      "src": "assets/images/nossos-servicos-conc.jpg",
+      "alt": "Imagem que representa a área de serviços e consultoria do ICECE, com elementos conceituais.",
+      "title": "Nossos Serviços: Conceitos"
+    },
+    {
+      "id": "nossos-servicos-cursos",
+      "src": "assets/images/nossos-servicos-cursos.jpg",
+      "alt": "Imagem que representa a área de cursos e treinamentos oferecidos pelo ICECE.",
+      "title": "Nossos Serviços: Cursos"
+    },
+    {
+      "id": "profissionais",
+      "src": "assets/images/profissionais.jpg",
+      "alt": "Grupo de profissionais e colaboradores do ICECE, representando a equipe da instituição.",
+      "title": "Nossa Equipe de Profissionais"
+    },
+    {
+      "id": "quem-somos-elemento",
+      "src": "assets/images/quem-somos-elemento.jpg",
+      "alt": "Imagem que representa o propósito e a identidade da seção 'Quem Somos' do ICECE.",
+      "title": "O ICECE: Quem Somos"
+    },
+    {
+      "id": "serv-tec-esp",
+      "src": "assets/images/serv-tec-esp.jpg",
+      "alt": "Imagem que ilustra serviços técnicos especializados oferecidos pelo ICECE.",
+      "title": "Serviços Técnicos Especializados"
+    },
+
+    {
+      "id": "instagram-icone",
+      "src": "assets/images/instagram-icone.png",
+      "alt": "vetor do icone instagram",
+      "title": "icone instagram"
+    },
+
+    {
+      "id": "whatsapp-icone",
+      "src": "assets/images/whatsapp-icone.png",
+      "alt": "vetor do icone whatsapp",
+      "title": "icone whatsapp"
+    },
+
+    {
+      "id": "icece-logo-branco",
+      "src": "assets/images/icece-logo-branco.png",
+      "alt": "Logotipo branco do ICECE.",
+      "title": "Logotipo ICECE"
+    }
+  ]
+}
