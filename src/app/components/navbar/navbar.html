@@ -2,32 +2,33 @@
   <div
     class="max-w-screen-xl mx-auto flex items-center justify-between py-4 px-6"
   >
-    <!-- Logo -->
     <a routerLink="/" class="flex items-center">
       <img src="assets/images/logo-icece.png" alt="Logo ICECE" class="h-8" />
     </a>
 
-    <!-- Menu -->
     <div class="hidden md:flex space-x-8">
       <a
-        routerLink=""
+        routerLink="/"
         routerLinkActive="text-[#91BB54]"
         [routerLinkActiveOptions]="{ exact: true }"
         class="text-lime-900 hover:text-[#91BB54] font-medium text-sm"
         >ICECE</a
       >
+
       <a
         routerLink="/concursos"
         routerLinkActive="text-[#91BB54]"
         class="text-lime-900 hover:text-[#91BB54] font-medium text-sm"
         >Concursos</a
       >
+
       <a
         routerLink="/cursos"
         routerLinkActive="text-[#91BB54]"
         class="text-lime-900 hover:text-[#91BB54] font-medium text-sm"
         >Cursos</a
       >
+
       <a
         routerLink="/florescer"
         routerLinkActive="text-[#91BB54]"
@@ -41,12 +42,16 @@
         class="text-lime-900 hover:text-[#91BB54] font-medium text-sm"
         >Transparência</a
       >
+
       <a
         routerLink="/trabalhe-conosco"
         routerLinkActive="text-[#91BB54]"
+        [routerLinkActiveOptions]="{ exact: true }"
         class="text-lime-900 hover:text-[#91BB54] font-medium text-sm"
-        >Trabalhe Conosco</a
       >
+        Trabalhe Conosco
+      </a>
+
       <a
         routerLink="/contato"
         routerLinkActive="text-[#91BB54]"

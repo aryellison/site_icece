@@ -1,10 +1,8 @@
 <app-navbar></app-navbar>
 <main class="pt-20 flex-grow">
-  <app-banner class="block mb-32"></app-banner>
-  <app-quem-somos></app-quem-somos>
-  <app-nossos-servicos></app-nossos-servicos>
-  <app-transparencia></app-transparencia>
-  <app-contate-nos></app-contate-nos>
-  <router-outlet></router-outlet>
+  <router-outlet
+    [@routeAnimations]="o.isActivated && o.activatedRoute.routeConfig?.path"
+    #o="outlet"
+  ></router-outlet>
 </main>
 <app-footer></app-footer>

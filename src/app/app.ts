@@ -1,30 +1,25 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { routes } from './app.routes';
 import { Navbar } from './components/navbar/navbar';
 import { Footer } from './components/footer/footer';
-import { Banner } from './home/banner/banner';
-import { QuemSomos } from './home/quem-somos/quem-somos';
-import { NossosServicosComponent } from './home/nossos-servicos/nossos-servicos';
-import { TransparenciaComponent } from './home/transparencia/transparencia';
-import { ContateNos } from './home/contate-nos/contate-nos';
-import { TrabalheConosco } from './pages/trabalhe-conosco/trabalhe-conosco';
+import { trigger, transition, style, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-root',
-  imports: [
-    RouterOutlet,
-    Navbar,
-    Footer,
-    Banner,
-    QuemSomos,
-    NossosServicosComponent,
-    TransparenciaComponent,
-    ContateNos,
-    TrabalheConosco,
-  ],
+  standalone: true,
+  imports: [RouterOutlet, Navbar, Footer],
   templateUrl: './app.html',
-  styleUrl: './app.css',
+  styleUrls: ['./app.css'],
+  animations: [
+    trigger('routeAnimations', [
+      transition('* <=> *', [
+        style({ opacity: 0 }),
+        animate('300ms ease-in', style({ opacity: 1 })),
+      ]),
+    ]),
+  ],
 })
 export class App {
-  protected title = 'site-icece';
+  title = 'site-icece';
 }

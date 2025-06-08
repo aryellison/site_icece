@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterLinkActive } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-footer',
-  standalone:true,
-  imports: [RouterLinkActive, CommonModule],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './footer.html',
-  styleUrl: './footer.css'
+  styleUrl: './footer.css',
 })
 export class Footer {
   address = 'Rua Eucalipto, 132, Cajazeiras, Fortaleza/Ce';
