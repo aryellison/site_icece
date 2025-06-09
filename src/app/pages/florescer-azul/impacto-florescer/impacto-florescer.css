@@ -1,0 +1,23 @@
+:host {
+  display: block;
+}
+
+.grid > div {
+  height: 100%;
+}
+
+.relative .absolute {
+}
+
+.font-jost {
+  font-family: "jost", sans-serif;
+}
+
+.group:hover img {
+  filter: grayscale(0);
+  transition: filter 0.5s ease;
+}
+
+section {
+  margin-bottom: 140px;
+}

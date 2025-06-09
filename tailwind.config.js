@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
-        "fade-in": {
-          "0%": { opacity: "0" },
-          "100%": { opacity: "1" },
+        fadeInUp: {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
         },
       },
 
@@ -14,6 +14,7 @@ module.exports = {
         "kumbh-sans": ['"Kumbh Sans"', "sans-serif"],
         inter: ["Inter", "sans-serif"],
         gloock: ["Gloock", "serif"],
+        jost: ["Jost", "sans-serif"],
       },
       colors: {
         "dark-green": "#314421",
@@ -30,5 +31,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };

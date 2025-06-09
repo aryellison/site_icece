@@ -140,6 +140,13 @@
       "src": "assets/images/icece-logo-branco.png",
       "alt": "Logotipo branco do ICECE.",
       "title": "Logotipo ICECE"
+    },
+
+    {
+      "id": "vector",
+      "src": "assets/images/vetor-cont.png",
+      "alt": "vetor.",
+      "title": "vetor"
     }
   ]
 }

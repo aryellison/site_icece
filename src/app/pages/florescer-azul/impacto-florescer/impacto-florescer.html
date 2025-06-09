@@ -1,0 +1,45 @@
+<section
+  class="w-full relative flex items-center py-10 bg-white font-inter mb-20"
+  style="height: 600px"
+>
+  <!-- IMPACTO com padding maior -->
+  <div
+    class="hidden md:flex flex-col items-center justify-center text-lime-900 text-[56px] font-jost font-bold leading-none space-y-1 select-none absolute left-0 top-1/2 -translate-y-1/2 pl-12"
+    style="height: 100%"
+  >
+    <span>I</span>
+    <span>M</span>
+    <span>P</span>
+    <span>A</span>
+    <span>C</span>
+    <span>T</span>
+    <span>O</span>
+  </div>
+
+  <!-- Cards maiores, com gap horizontal maior -->
+  <div class="grid grid-cols-3 gap-x-4 gap-y-0 w-[1120px] h-full ml-auto">
+    <div
+      *ngFor="let card of cards; let i = index"
+      class="relative group w-full h-full overflow-hidden cursor-pointer"
+    >
+      <img
+        [src]="card.img"
+        alt="{{ card.title }}"
+        class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500"
+      />
+      <div
+        class="absolute inset-0 flex flex-col justify-between bg-black/40 text-white p-6 text-center"
+      >
+        <div class="flex flex-col items-center justify-center flex-grow">
+          <div class="text-[104px] font-jost font-extralight leading-none">
+            {{ i === 0 ? count1 : i === 1 ? count2 : count3 }}
+          </div>
+          <h3 class="font-inter font-bold text-3xl mt-2">{{ card.title }}</h3>
+        </div>
+        <p class="font-inter text-sm max-w-[220px] mx-auto text-left">
+          {{ card.description }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

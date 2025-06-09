@@ -1,6 +1,10 @@
 <section class="py-16 px-4 md:px-8 bg-gray-50 font-inter">
   <div class="container mx-auto max-w-[1280px]">
-    <div class="flex items-center justify-center mb-8">
+    <div
+      class="flex items-center justify-center mb-8"
+      data-aos="fade-up"
+      data-aos-duration="600"
+    >
       <div
         class="w-10 h-10 bg-lime-500 rounded-full flex items-center justify-center shadow mr-4"
       >
@@ -15,6 +19,8 @@
 
     <p
       class="text-center text-xl md:text-2xl italic text-lime-900 mb-16 max-w-4xl mx-auto"
+      data-aos="fade-up"
+      data-aos-delay="100"
     >
       "{{ quote }}"
     </p>
@@ -23,12 +29,14 @@
       class="grid grid-cols-1 md:grid-cols-3 gap-x-[40px] gap-y-[5px] justify-center max-w-[970px] mx-auto"
     >
       <div
-        *ngFor="let service of services"
-        class="relative w-[320px] h-[600px] bg-cover bg-center rounded-[32px] overflow-hidden shadow-lg flex flex-col justify-end p-[36px] transform hover:scale-103 transition-transform duration-300 ease-in-out cursor-pointer"
+        *ngFor="let service of services; let i = index"
+        class="relative w-[300px] h-[540px] rounded-[32px] overflow-hidden shadow-lg flex flex-col justify-end p-[32px] cursor-pointer transform transition-transform duration-300 ease-in-out hover:scale-105 group"
+        [attr.data-aos]="'zoom-in-up'"
+        [attr.data-aos-delay]="200 + (i * 100)"
       >
         <div
           [style.background-image]="'url(' + service.image + ')'"
-          class="absolute inset-0 bg-cover bg-center"
+          class="absolute inset-0 bg-cover bg-center transition-filter duration-300 ease-in-out group-hover:blur-sm"
         ></div>
 
         <div class="absolute inset-0 bg-black opacity-40"></div>

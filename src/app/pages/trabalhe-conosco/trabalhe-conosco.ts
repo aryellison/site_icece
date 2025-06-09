@@ -7,10 +7,16 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [FormsModule, RouterModule],
   templateUrl: './trabalhe-conosco.html',
-  styleUrl: './trabalhe-conosco.css',
+  styleUrls: ['./trabalhe-conosco.css'],
 })
 export class TrabalheConosco {
   selectedFileName: string = 'Clique para Anexar o Arquivo';
+
+  vetorImage = {
+    src: 'assets/images/vetor-cont.png',
+    alt: 'vetor.',
+    title: 'vetor',
+  };
 
   onFileSelected(event: Event): void {
     const input = event.target as HTMLInputElement;

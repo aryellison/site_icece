@@ -1,0 +1,121 @@
+<section class="py-16 px-4 md:px-8 bg-gray-50 font-inter">
+  <div class="container mx-auto max-w-[1280px]">
+    <!-- Texto acima dos cards -->
+    <div class="max-w-4xl mx-auto mb-12 text-center">
+      <h2
+        class="text-lime-900 text-3xl font-bold mb-4"
+        style="font-family: 'Inter', sans-serif"
+      >
+        Sala de Recreação
+      </h2>
+      <p
+        class="text-gray-900 text-lg leading-relaxed"
+        style="font-family: 'Inter', sans-serif"
+      >
+        Espaço acolhedor e estimulante para atender as crianças que fazem parte
+        do projeto. Equipada com uma variedade de brinquedos sensoriais, áreas
+        de relaxamento, jogos interativos e materiais de arte, nossa sala de
+        recreação oferece oportunidades infinitas para a exploração e a
+        aprendizagem. Profissionais treinados estão sempre presentes para
+        fornecer orientação e apoio, adaptando as atividades de acordo com as
+        necessidades e interesses de cada criança.
+      </p>
+    </div>
+
+    <!-- Cards -->
+    <div
+      class="grid grid-cols-1 md:grid-cols-3 gap-x-[40px] gap-y-[5px] justify-center max-w-[970px] mx-auto"
+    >
+      <!-- Card 1 -->
+      <div
+        class="relative w-[300px] h-[540px] rounded-[32px] overflow-hidden shadow-lg flex flex-col justify-end p-[32px] cursor-pointer transform transition-transform duration-300 ease-in-out hover:scale-105 group"
+        data-aos="zoom-in-up"
+        data-aos-delay="200"
+      >
+        <div
+          [style.background-image]="'url(' + interatividadeImage + ')'"
+          class="absolute inset-0 bg-cover bg-center transition-filter duration-300 ease-in-out group-hover:blur-sm"
+        ></div>
+
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+
+        <div
+          class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black to-transparent z-0"
+        ></div>
+
+        <div class="relative z-10 text-white">
+          <h3
+            class="text-2xl font-bold mb-2"
+            style="font-family: 'Inter', sans-serif"
+          >
+            Interatividade
+          </h3>
+          <p class="text-lg" style="font-family: 'Inter', sans-serif">
+            Atividades que promovem a interação social e a troca entre os
+            participantes.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div
+        class="relative w-[300px] h-[540px] rounded-[32px] overflow-hidden shadow-lg flex flex-col justify-end p-[32px] cursor-pointer transform transition-transform duration-300 ease-in-out hover:scale-105 group"
+        data-aos="zoom-in-up"
+        data-aos-delay="300"
+      >
+        <div
+          [style.background-image]="'url(' + experienciaAprendizagemImage + ')'"
+          class="absolute inset-0 bg-cover bg-center transition-filter duration-300 ease-in-out group-hover:blur-sm"
+        ></div>
+
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+
+        <div
+          class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black to-transparent z-0"
+        ></div>
+
+        <div class="relative z-10 text-white">
+          <h3
+            class="text-2xl font-bold mb-2"
+            style="font-family: 'Inter', sans-serif"
+          >
+            Experiência e Aprendizagem
+          </h3>
+          <p class="text-lg" style="font-family: 'Inter', sans-serif">
+            Momentos de aprendizado adaptados às necessidades de cada criança.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div
+        class="relative w-[300px] h-[540px] rounded-[32px] overflow-hidden shadow-lg flex flex-col justify-end p-[32px] cursor-pointer transform transition-transform duration-300 ease-in-out hover:scale-105 group"
+        data-aos="zoom-in-up"
+        data-aos-delay="400"
+      >
+        <div
+          [style.background-image]="'url(' + ideasImage + ')'"
+          class="absolute inset-0 bg-cover bg-center transition-filter duration-300 ease-in-out group-hover:blur-sm"
+        ></div>
+
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+
+        <div
+          class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black to-transparent z-0"
+        ></div>
+
+        <div class="relative z-10 text-white">
+          <h3
+            class="text-2xl font-bold mb-2"
+            style="font-family: 'Inter', sans-serif"
+          >
+            Criatividade
+          </h3>
+          <p class="text-lg" style="font-family: 'Inter', sans-serif">
+            Estímulo à imaginação e ao desenvolvimento de ideias inovadoras.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

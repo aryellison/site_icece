@@ -1,6 +1,10 @@
 <section class="py-24 px-4 md:px-8 bg-gray-50 font-inter">
   <div class="container mx-auto max-w-[1280px]">
-    <div class="max-w-[960px] mx-auto">
+    <div
+      class="max-w-[960px] mx-auto"
+      data-aos="fade-up"
+      data-aos-duration="500"
+    >
       <h2
         class="text-left text-[36px] md:text-[48px] font-bold text-lime-900 mb-12"
       >
@@ -8,7 +12,13 @@
       </h2>
     </div>
 
-    <form (ngSubmit)="onSubmit()" class="max-w-[960px] mx-auto p-0">
+    <form
+      (ngSubmit)="onSubmit()"
+      class="max-w-[960px] mx-auto p-0"
+      data-aos="fade-up"
+      data-aos-duration="500"
+      data-aos-delay="100"
+    >
       <div
         class="grid grid-cols-1 md:grid-cols-2 gap-x-[30px] gap-y-[20px] mb-[20px]"
       >
@@ -40,7 +50,7 @@
             name="email"
             [(ngModel)]="email"
             required
-            placeholder="Digite seu nome"
+            placeholder="Digite seu e-mail"
             class="w-full h-[58px] p-[16px] border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-500 placeholder-gray-400 text-lime-900"
           />
         </div>
@@ -58,12 +68,17 @@
           name="assunto"
           [(ngModel)]="assunto"
           required
-          placeholder="Digite seu nome"
+          placeholder="Digite o assunto"
           class="w-full h-[70px] p-[16px] border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-500 placeholder-gray-400 text-lime-900"
         />
       </div>
 
-      <div class="flex justify-end items-center space-x-4">
+      <div
+        class="flex justify-end items-center space-x-4"
+        data-aos="fade-up"
+        data-aos-duration="500"
+        data-aos-delay="200"
+      >
         <button
           type="button"
           class="flex items-center bg-lime-500 text-white font-bold py-[16px] px-[32px] rounded-full hover:bg-lime-600 focus:outline-none focus:ring-2 focus:ring-lime-500 focus:ring-offset-2 transition-colors duration-200"

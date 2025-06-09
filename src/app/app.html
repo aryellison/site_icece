@@ -1,8 +1,22 @@
 <app-navbar></app-navbar>
-<main class="pt-20 flex-grow">
-  <router-outlet
-    [@routeAnimations]="o.isActivated && o.activatedRoute.routeConfig?.path"
-    #o="outlet"
-  ></router-outlet>
+<main class="app-wrapper pt-20 flex-grow">
+  <router-outlet></router-outlet>
 </main>
+<button
+  *ngIf="showScrollTop"
+  (click)="scrollToTop()"
+  class="fixed bottom-6 right-6 bg-lime-500 text-white p-3 rounded-full shadow-lg hover:bg-lime-600 transition-colors focus:outline-none focus:ring-2 focus:ring-white z-50"
+  aria-label="Voltar ao topo"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="h-6 w-6 mx-auto"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="white"
+    stroke-width="2"
+  >
+    <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+  </svg>
+</button>
 <app-footer></app-footer>
