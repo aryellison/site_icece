@@ -10,45 +10,36 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./impacto-florescer.css'],
 })
 export class ImpactoFlorescer implements OnInit {
-  familiaImageSrc: string = '/assets/images/familias.jpg';
-  eventosImageSrc: string = '/assets/images/eventos.jpg';
-  profissionaisImageSrc: string = '/assets/images/profissionais.jpg';
-
   cards = [
     {
-      img: this.familiaImageSrc,
-      countGetter: () => this.count1,
+      img: '/assets/images/familias.jpg',
       title: 'Famílias Atendidas',
       description: 'Apoio direto a centenas de famílias vulneráveis.',
+      finalCount: 480,
+      animatedValue: 0,
     },
     {
-      img: this.eventosImageSrc,
-      countGetter: () => this.count2,
+      img: '/assets/images/eventos.jpg',
       title: 'Eventos',
       description: 'Ações organizadas para engajamento da comunidade.',
+      finalCount: 32,
+      animatedValue: 0,
     },
     {
-      img: this.profissionaisImageSrc,
-      countGetter: () => this.count3,
+      img: '/assets/images/profissionais.jpg',
       title: 'Profissionais',
       description: 'Equipe dedicada em diversas áreas do projeto.',
+      finalCount: 57,
+      animatedValue: 0,
     },
   ];
 
-  count1: number = 0;
-  count2: number = 0;
-  count3: number = 0;
-  showNumbers: boolean = false;
-
   ngOnInit(): void {
-    this.animateCounts();
-  }
-
-  animateCounts() {
-    this.showNumbers = true;
-    this.animate(0, 480, 1000, (val) => (this.count1 = val));
-    this.animate(0, 32, 1000, (val) => (this.count2 = val));
-    this.animate(0, 57, 1000, (val) => (this.count3 = val));
+    this.cards.forEach((card, i) => {
+      this.animate(0, card.finalCount, 1500, (val) => {
+        this.cards[i].animatedValue = val;
+      });
+    });
   }
 
   animate(
@@ -56,7 +47,7 @@ export class ImpactoFlorescer implements OnInit {
     end: number,
     duration: number,
     callback: (val: number) => void
-  ) {
+  ): void {
     let startTime: number | null = null;
 
     const step = (timestamp: number) => {
@@ -70,14 +61,5 @@ export class ImpactoFlorescer implements OnInit {
     };
 
     requestAnimationFrame(step);
-  }
-  familiasCount() {
-    return this.count1;
-  }
-  eventosCount() {
-    return this.count2;
-  }
-  profissionaisCount() {
-    return this.count3;
   }
 }

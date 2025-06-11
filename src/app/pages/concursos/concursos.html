@@ -1,1 +1,126 @@
-<p>concursos works!</p>
+<section class="w-full bg-gray-50 font-inter px-6 py-12 space-y-12">
+  <div class="max-w-6xl mx-auto">
+    <h1
+      class="text-4xl font-extrabold text-lime-900 b-6"
+      style="font-family: 'Inter', sans-serif"
+    >
+      Concursos Públicos
+    </h1>
+    <p class="text-lg text-gray-600 mb-12">
+      Acompanhe as notícias de concursos pelo nosso portal.
+    </p>
+
+    <div class="space-y-10">
+      <div>
+        <h2 class="text-2xl font-bold text-lime-900 mb-6">Concursos Abertos</h2>
+        @for (c of concursosAbertos; track c.titulo) {
+        <div
+          class="flex flex-col md:flex-row items-start md:items-center bg-white rounded-lg shadow-sm overflow-hidden mb-4 border border-gray-200 hover:shadow-md transition-shadow duration-300 p-6"
+        >
+          <div class="flex items-center flex-grow">
+            <div
+              class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 mr-4"
+            >
+              <div [innerHTML]="c.icon" class="w-6 h-6"></div>
+            </div>
+
+            <div class="flex-grow">
+              <h3 class="text-lg font-bold text-gray-800">{{ c.titulo }}</h3>
+              <p class="text-gray-600 text-sm mt-1">{{ c.orgao }}</p>
+              @if (c.periodo) {
+              <p class="text-gray-500 text-xs mt-1">Período: {{ c.periodo }}</p>
+              }
+            </div>
+          </div>
+
+          <div class="mt-4 md:mt-0 md:ml-auto flex-shrink-0">
+            <a
+              href="#"
+              class="inline-block text-lime-500 hover:underline font-semibold text-sm px-4 py-2 rounded-md border border-lime-500 hover:bg-lime-100 transition-colors duration-200"
+              >Ver Detalhes</a
+            >
+          </div>
+        </div>
+        } @empty {
+        <p
+          class="text-gray-500 text-center py-4 border border-dashed border-gray-300 rounded-md"
+        >
+          Sem concursos abertos no momento.
+        </p>
+        }
+      </div>
+
+      <hr class="border-t border-gray-300 my-8" />
+
+      <div>
+        <h2 class="text-2xl font-bold text-lime-900 mb-6">
+          Concursos em andamento
+        </h2>
+        @for (c of concursosEmAndamento; track c.titulo) {
+        <div
+          class="flex flex-col md:flex-row items-start md:items-center bg-white rounded-lg shadow-sm overflow-hidden mb-4 border border-gray-200 hover:shadow-md transition-shadow duration-300 p-6"
+        >
+          <div class="flex items-center flex-grow">
+            <div
+              class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 mr-4"
+            >
+              <div [innerHTML]="c.icon" class="w-6 h-6"></div>
+            </div>
+
+            <div class="flex-grow">
+              <h3 class="text-lg font-bold text-gray-800">{{ c.titulo }}</h3>
+              <p class="text-gray-600 text-sm mt-1">{{ c.orgao }}</p>
+            </div>
+          </div>
+
+          <div class="mt-4 md:mt-0 md:ml-auto flex-shrink-0">
+            <a
+              href="#"
+              class="inline-block text-lime-500 hover:underline font-semibold text-sm px-4 py-2 rounded-md border border-lime-500 hover:bg-lime-10 0 transition-colors duration-200"
+              >Ver Detalhes</a
+            >
+          </div>
+        </div>
+        } @empty {
+        <p
+          class="text-gray-500 text-center py-4 border border-dashed border-gray-300 rounded-md"
+        >
+          Sem concursos em andamento no momento.
+        </p>
+        }
+      </div>
+
+      <hr class="border-t border-gray-300 my-8" />
+
+      <div>
+        <h2 class="text-2xl font-bold text-lime-900 mb-6">
+          Concursos concluídos
+        </h2>
+        @for (c of concursosConcluidos; track c.titulo) {
+        <div
+          class="flex flex-col md:flex-row items-start md:items-center bg-white rounded-lg shadow-sm overflow-hidden mb-4 border border-gray-200 hover:shadow-md transition-shadow duration-300 p-6"
+        >
+          <div class="flex items-center flex-grow">
+            <div
+              class="flex-shrink-0 w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 mr-4"
+            >
+              <div [innerHTML]="c.icon" class="w-6 h-6"></div>
+            </div>
+
+            <div class="flex-grow">
+              <h4 class="text-lg font-bold text-gray-800">{{ c.titulo }}</h4>
+              <p class="text-gray-600 text-sm mt-1">{{ c.orgao }}</p>
+            </div>
+          </div>
+        </div>
+        } @empty {
+        <p
+          class="text-gray-500 text-center py-4 border border-dashed border-gray-300 rounded-md"
+        >
+          Sem concursos concluídos no momento.
+        </p>
+        }
+      </div>
+    </div>
+  </div>
+</section>

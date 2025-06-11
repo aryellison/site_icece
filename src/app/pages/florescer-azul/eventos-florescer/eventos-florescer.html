@@ -1,1 +1,41 @@
-<p>eventos-florescer works!</p>
+<section class="w-full bg-white py-16 font-inter flex justify-center">
+  <div class="max-w-6xl w-full px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div
+      *ngFor="let evento of eventos"
+      class="bg-white rounded-2xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02] border"
+    >
+      <div class="w-full h-[220px] overflow-hidden">
+        <img
+          [src]="evento.imagem"
+          alt="{{ evento.titulo }}"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="p-6 flex flex-col justify-between h-[260px]">
+        <div
+          class="flex items-center justify-between text-sm text-gray-500 mb-3"
+        >
+          <span>{{ evento.data }}</span>
+          <span>{{ evento.tempo }}</span>
+        </div>
+
+        <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2">
+          {{ evento.titulo }}
+        </h3>
+
+        <p class="text-sm text-gray-700 mb-4 line-clamp-3">
+          {{ evento.descricao }}
+        </p>
+
+        <div class="flex flex-wrap gap-2">
+          <span
+            *ngFor="let cat of evento.categorias"
+            class="bg-lime-100 text-lime-800 px-3 py-1 text-xs font-semibold rounded-full"
+          >
+            {{ cat }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

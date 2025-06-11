@@ -1,7 +1,5 @@
 <section class="relative bg-white px-8 py-16 min-h-[1017px] flex">
-  <div
-    style="position: absolute; top: 0; left: 0; width: 274px; height: 1017px"
-  >
+  <div class="absolute top-0 left-0 w-[274px] h-[1017px] z-10 hidden lg:block">
     <img
       [src]="handsImage"
       alt="Mãos dadas em sinal de apoio"
@@ -10,12 +8,10 @@
     />
   </div>
 
-  <div class="ml-[290px] space-y-6 max-w-5xl">
-    <img
-      [src]="logoSrc"
-      alt="Logo Florescer Azul"
-      class="w-32 self-end float-right"
-    />
+  <div class="ml-0 lg:ml-[290px] space-y-6 max-w-5xl w-full pr-8 md:pr-0">
+    <div class="w-full flex justify-end">
+      <img [src]="logoSrc" alt="Logo Florescer Azul" class="w-32 self-end" />
+    </div>
 
     <h2
       class="text-3xl font-bold text-gray-900 leading-tight"
@@ -83,7 +79,7 @@
     <div class="pt-12" style="font-family: 'Inter', sans-serif">
       <h3 class="text-xl font-bold text-gray-900 flex items-center mb-6">
         <span
-          class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-lime-500 mr-2"
+          class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-lime-500 mr-2 flex-shrink-0"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -103,26 +99,28 @@
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div
-          class="bg-gray-50 text-black p-4 rounded-lg flex flex-col justify-start"
+          class="bg-gray-50 text-black p-4 rounded-lg flex flex-col justify-start relative"
           style="font-family: 'Inter', sans-serif"
         >
-          <span class="inline-block w-8 h-8 mb-2 text-lime-500">
+          <span
+            class="absolute top-4 right-4 inline-block w-8 h-8 text-lime-500"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
+              fill="none"
               viewBox="0 0 24 24"
-              stroke-width="2"
+              stroke-width="2.5"
               stroke="currentColor"
               class="w-full h-full"
             >
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                d="M12 4.5v15m7.5-7.5h-15"
               />
             </svg>
           </span>
-          <h4 class="font-semibold text-lg">Cine Cultural</h4>
+          <h4 class="font-semibold text-lg pr-10">Cine Cultural</h4>
           <p class="text-sm mt-1">
             Ponto de encontro para amantes do cinema e entusiastas da cultura,
             oferecendo exibições regulares de filmes que transcendem fronteiras
@@ -131,26 +129,30 @@
         </div>
 
         <div
-          class="bg-gray-50 text-black p-4 rounded-lg flex flex-col justify-start"
+          class="bg-gray-50 text-black p-4 rounded-lg flex flex-col justify-start relative"
           style="font-family: 'Inter', sans-serif"
         >
-          <span class="inline-block w-8 h-8 mb-2 text-lime-500">
+          <span
+            class="absolute top-4 right-4 inline-block w-8 h-8 text-lime-500"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
+              fill="none"
               viewBox="0 0 24 24"
-              stroke-width="2"
+              stroke-width="2.5"
               stroke="currentColor"
               class="w-full h-full"
             >
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                d="M12 4.5v15m7.5-7.5h-15"
               />
             </svg>
           </span>
-          <h4 class="font-semibold text-lg">Oficinas de Artes e Artesanato</h4>
+          <h4 class="font-semibold text-lg pr-10">
+            Oficinas de Artes e Artesanato
+          </h4>
           <p class="text-sm mt-1">
             Oficinas práticas que ensinam técnicas tradicionais de pintura,
             escultura e tecelagem, promovendo conexão com artesãos locais.
@@ -158,26 +160,30 @@
         </div>
 
         <div
-          class="bg-gray-50 text-black p-4 rounded-lg flex flex-col justify-start"
+          class="bg-gray-50 text-black p-4 rounded-lg flex flex-col justify-start relative"
           style="font-family: 'Inter', sans-serif"
         >
-          <span class="inline-block w-8 h-8 mb-2 text-lime-500">
+          <span
+            class="absolute top-4 right-4 inline-block w-8 h-8 text-lime-500"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
+              fill="none"
               viewBox="0 0 24 24"
-              stroke-width="2"
+              stroke-width="2.5"
               stroke="currentColor"
               class="w-full h-full"
             >
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                d="M12 4.5v15m7.5-7.5h-15"
               />
             </svg>
           </span>
-          <h4 class="font-semibold text-lg">Festival de Artes Tradicionais</h4>
+          <h4 class="font-semibold text-lg pr-10">
+            Festival de Artes Tradicionais
+          </h4>
           <p class="text-sm mt-1">
             Com apresentações de danças folclóricas, músicas autênticas,
             demonstrações de artesanato e uma variedade de iguarias culinárias

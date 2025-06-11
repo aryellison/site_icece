@@ -4,12 +4,29 @@ import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-recreacao-florescer',
-  imports: [RouterModule, RouterModule],
+  standalone: true,
+  imports: [RouterModule, CommonModule],
   templateUrl: './recreacao-florescer.html',
-  styleUrl: './recreacao-florescer.css',
+  styleUrls: ['./recreacao-florescer.css'],
 })
 export class RecreacaoFlorescer {
-  interatividadeImage: string = '/assets/images/interatividade.jpg';
-  experienciaAprendizagemImage: string = '/assets/images/exp-e-aprend.jpg';
-  ideasImage: string = '/assets/images/ideas.jpg';
+  cards = [
+    {
+      title: 'Interatividade',
+      imageUrl: '/assets/images/interatividade.jpg',
+      altText: 'Crianças com as mãos para cima em um círculo',
+    },
+    {
+      title: 'Exploração e Aprendizagem',
+      imageUrl: '/assets/images/exp-e-aprend.jpg',
+      altText: 'Crianças brincando em uma mesa redonda',
+    },
+    {
+      title: 'Criatividade',
+      imageUrl: '/assets/images/ideas.jpg',
+      altText: 'Mão segurando uma lâmpada acesa',
+    },
+  ];
+
+  constructor() {}
 }
